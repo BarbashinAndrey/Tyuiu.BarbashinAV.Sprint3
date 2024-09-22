@@ -6,7 +6,8 @@ namespace Tyuiu.BarbashinAV.Sprint3.Task0.V15.Test;
 public class DataServiceTest 
 { 
    [TestMethod] 
-   public void ValidExpression()  
-   { 
+   public void ValidGetSumSeries()  
+   {
+        Assert.AreEqual(4.063, new DataService().GetSumSeries(0.7, 1, 10));
    } 
 } 

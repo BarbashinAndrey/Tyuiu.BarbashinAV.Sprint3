@@ -15,20 +15,21 @@ class Program
         Console.WriteLine("* Выполнил: Барбашин Андрей Владиславович | ИИПб-24-1                                                           *"); 
         Console.WriteLine("************************************************************************"); 
         Console.WriteLine("* УСЛОВИЕ:                                                             *"); 
-        Console.WriteLine("*                                                                      *"); 
+        Console.WriteLine("* Написать программу используя цикл for, которая вычисляет сумму ряда  *");
+        Console.WriteLine("* по формуле, при t = 0,7                                              *");
         Console.WriteLine("************************************************************************"); 
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                     *"); 
-        Console.WriteLine("************************************************************************"); 
- 
-        Console.WriteLine("Введите переменную X:"); 
-        int x = int.Parse(Console.ReadLine()!); 
-        Console.WriteLine("Введите переменную Y:"); 
-        int y = int.Parse(Console.ReadLine()!); 
- 
+        Console.WriteLine("************************************************************************");
+        Console.WriteLine("* Переменная t = 0,7                                                   *");
+        Console.WriteLine("* Старт шага = 1                                                       *");
+        Console.WriteLine("* Конец шага = 10                                                      *");
         Console.WriteLine("************************************************************************"); 
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                           *"); 
-        Console.WriteLine("************************************************************************"); 
- 
-        Console.WriteLine($"Ответ = "); 
+        Console.WriteLine("************************************************************************");
+
+        var t = 0.7;
+        var start = 1;
+        var stop = 10;
+        Console.WriteLine($"Сумма ряда = {new DataService().GetSumSeries(t, start, stop)}"); 
     } 
 } 
