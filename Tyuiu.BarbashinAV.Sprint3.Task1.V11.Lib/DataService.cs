@@ -8,9 +8,10 @@ public class DataService : ISprint3Task1V11
     {
         double mulSeries = 1;
         int i = startValue;
+        double s = 0.5;
         while (i <= stopValue)
         {
-            mulSeries *= (Math.Pow(value, i) + 1/2);
+            mulSeries *= Math.Pow(value, i) + s;
             i++;
         }
 
