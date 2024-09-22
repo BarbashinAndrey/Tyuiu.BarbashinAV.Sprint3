@@ -10,7 +10,7 @@ public class DataService : ISprint3Task2V5
         int i = startValue;
         do
         {
-            sumSeries += (Math.Pow(value, i) + 2d / (i + 1)) * Math.Sin(value);
+            sumSeries += (Math.Pow(value, i) + 1d) * Math.Cos(i);
             i++;
         } while (i <= stopValue);
 

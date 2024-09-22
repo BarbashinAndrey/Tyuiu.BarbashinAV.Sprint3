@@ -8,6 +8,6 @@ public class DataServiceTest
    [TestMethod] 
    public void ValidGetSumSeries()  
    {
-        Assert.AreEqual(5.645, new DataService().GetSumSeries(0.75, 1, 20));
+        Assert.AreEqual(0.333, new DataService().GetSumSeries(0.75, 1, 20));
     } 
 } 
